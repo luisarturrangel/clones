@@ -8,27 +8,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <section class="background">
       <div class="logoNetflix">
         <picture>
-            <source media="(max-width: 550px)" srcset="../imagens/netflix-logo-p.png" type="image/png">
-            <source media="(max-width: 1050px)" srcset="../imagens/netflix-logo-m.png" type="image/png">
-            <img src="../imagens/netflix-logo-g.png" alt="Netflix logo">
+          <source
+            media="(max-width: 550px)"
+            srcset="../imagens/netflix-logo-p.png"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1050px)"
+            srcset="../imagens/netflix-logo-m.png"
+            type="image/png"
+          />
+          <img src="../imagens/netflix-logo-g.png" alt="Netflix logo" />
         </picture>
       </div>
-        <section class="container" id="container">
-            <div class="idioma">
-                <select name="idioma" id="idioma" >
-                  <option value="Portugues">Português</option>
-                  <option value="Ingles">Inglês</option>
-                </select>
-            </div>
-            <div class="login">
-                <a href="loginpage.html">Entrar</a>
-            </div>
+      <header>
+        <section class="container">
+          <div class="idioma">
+            <select name="idioma" id="idioma">
+              <option value="Portugues">Português</option>
+              <option value="Ingles">Inglês</option>
+            </select>
+          </div>
+          <div class="login">
+            <a href="loginpage.html">Entrar</a>
+          </div>
         </section>
-    </header>
-    <main></main>
+      </header>
+      <main>
+          <section class="inicio">
+            <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+            <p>Pronto para assistir? informe seu email <br>para criar ou reiniciar sua assinatura.</p>
+          </section>
+          <section class="grid">
+            <div class="email">
+              <form action="/action_page.php">
+                <fieldset>
+                  <div class="inside"><label for="email">Email</label></div>
+                  <div class="caixa"><input type="text" name="Email"></div>
+                  <div class="button"><input type="submit" value="Submit"></div>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+      </main>
+    </section>
+    <section class="parte1">
+      <h1>Aproveite na TV.</h1>
+      <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos</p>
+      <div class="img-direita"><img src="../imagens/favicon.jpg" alt="exemplo"></div>
+    </section>
+    <section class="parte2">
+      <h1>Baixe séries para assistir offline.</h1>
+      <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+      <div class="img-esquerda"><img src="../imagens/favicon.jpg" alt="exemplo"></div>
+    </section>
+    <section class="parte1">
+      <h1>Assista quando quiser.</h1>
+      <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+      <div class="img-direita"><img src="../imagens/favicon.jpg" alt="exemplo"></div>
+    </section>
+    <section class="parte2">
+      <h1>Crie perfis para crianças.</h1>
+      <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+      <div class="img-esquerda"><img src="../imagens/favicon.jpg" alt="exemplo"></div>
+    </section>
+    </main>
     <footer></footer>
   </body>
 </html>

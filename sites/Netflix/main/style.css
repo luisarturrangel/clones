@@ -5,24 +5,77 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    height: 98vh;
+.background {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../imagens/backgroud-inicio.jpg');
+    background-color: black;
+    box-shadow: inset 0px 20px 20px 20px #000000d5;
+}
+
+.inicio {
+    text-shadow: 4px 2px 6px black;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+section.inicio > h1 {
+    font-size: 36px;
+}
+
+section.inicio > p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.parte1 > div {
+    height: 15vh;
+    width: 10vw;
+    background-color: white;
+}
+
+.parte1, .parte2 {
+    line-height: 2em;
+    border-top: 5px solid #222222;
+    border-bottom: 5px solid #222222;
+    padding: 20vh;
+    color: white;
     background-color: black;
 }
 
+.img-direita, .img-esquerda, .parte1 > p, .parte2 > p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 45vw;
+}
+
+
+.parte2 {
+    text-align: right;
+    
+}
+
+.parte1 > h1, .parte2 > h1 {
+    font-size: 36px;
+}
+
+
+.parte1 > p, .parte2 > p {
+    font-size: 18px;
+}
+
 .logoNetflix {
-    padding-top: 2em;
-    padding-left: 40px;
-    max-width: 100%;
-    height: auto;
+    padding: 20px;
 }
 
 .idioma {
-    order: 2;
+    padding-left: 73vw;
 }
 
 .login {
-    order: 1;
     width: 50px;
     padding: 8px;
     background-color: #E50914;
@@ -39,10 +92,7 @@ body {
 
 .container {
     display: flex;
-    gap: 1rem;
-    flex-direction: row-reverse;
-    padding-right: 40px;
-
+    gap: 2em;
 }
 
 option {
@@ -57,4 +107,20 @@ select {
     width: 100px;
     height: 30px;
     text-align: center;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+}
+
+.email > .caixa {
+    width: 500px;
+    background-color: white;
+    color: black;
+}
+
+.email > .button {
+    width: 50px;
+    background-color: red;
 }
