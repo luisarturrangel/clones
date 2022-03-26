@@ -10,27 +10,6 @@ body {
     background-color: black;
 }
 
-section.junto {
-
-}
-
-#login {
-    width: 50px;
-    padding: 5px;
-    background-color: #E50914;
-    border-radius: 5%;
-    top: -35px;
-    left: 80%;
-}
-
-
-#login > a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .logoNetflix {
     padding-top: 2em;
     padding-left: 40px;
@@ -38,8 +17,32 @@ section.junto {
     height: auto;
 }
 
+.idioma {
+    order: 2;
+}
+
+.login {
+    order: 1;
+    width: 50px;
+    padding: 8px;
+    background-color: #E50914;
+    border-radius: 5%;
+}
+
+
+.login > a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .container {
-    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    padding-right: 40px;
+
 }
 
 option {
@@ -52,8 +55,6 @@ select {
     border: 1px solid white;
     border-radius: 5%;
     width: 100px;
-    height: 5vh;
-    position: absolute;
-    top: -35px;
-    left: 60%;
+    height: 30px;
+    text-align: center;
 }
