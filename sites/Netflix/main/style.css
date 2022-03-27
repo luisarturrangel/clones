@@ -109,18 +109,36 @@ select {
     text-align: center;
 }
 
-.grid {
-    display: grid;
+.boxEmail {
+    display: flex;
     justify-content: center;
 }
 
-.email > .caixa {
-    width: 500px;
-    background-color: white;
-    color: black;
+.boxEmail > input[type=text] {
+    margin-top: 80px;
+    
 }
 
-.email > .button {
-    width: 50px;
-    background-color: red;
+.boxEmail > input[type=input] {
+
+}
+
+input[type=submit] {
+    background-color: #F40612;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    padding: 12px;
+    border: 1px solid #F40612;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    height: 50px;
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
